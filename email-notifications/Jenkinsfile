@@ -14,7 +14,7 @@ node {
     }
     stage('test') {
       println('A test has failed!')
-       // sh for linux
+       bat 'exit 1'   // sh for linux
     }
   } catch(e) {
     // mark build as failed
